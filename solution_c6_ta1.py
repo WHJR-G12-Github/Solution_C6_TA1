@@ -58,7 +58,7 @@ while True:
        if event.key == pygame.K_SPACE and bulletState=="ready":
            # Assigning "fired" to 'bulletState'
            bulletState="fired"
-           # Assign 'angle' value to another variable 'bangle'
+           # Assigning 'angle' value to another variable 'bangle'
            bangle=angle
         
     if event.type == pygame.KEYUP:
@@ -81,7 +81,7 @@ while True:
       screen.blit(enemy_image,enemy)  
       i=i+1
   
-  # Checking if 'bulletState' is "ready" and fixing x,y coordinates
+  # Checking if 'bulletState' is "ready" and assigning x,y coordinates
   # x,y coordinates are assigned such that bullet is hidden in 'player' image
   if bulletState=="ready":
     bullet.x = player.x+20
